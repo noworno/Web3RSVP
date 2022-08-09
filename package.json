@@ -4,15 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "script": "node scripts/run.js"
+    "script": "node scripts/run.js",
+    "deploy": "npx hardhat run scripts/deploy.js --network rinkeby"
   },
   "author": "Jelair",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.0.1",
     "save-dev": "^0.0.1-security"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
     "hardhat": "^2.10.1"
   }
 }
